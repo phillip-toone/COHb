@@ -1,0 +1,1130 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.7691.4821"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>ef74622b-91b9-4ac9-8c47-ba1d8176e12a</id>
+      <revision>67</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="0" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.7691.4821" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.7691.4821" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.7691.4821" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="TextRegion" version="1.11.7691.4821" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="786" height="56" color="#000000" fontSize="10">
+      <text lang="eng">
+        <content>
+          <p>Define the Haldane constant, the binding capacity of hemoglobin, the vapor pressure of water at body temperature, and endogenous carbon monoxide production rate, and the oxygen pressure differential between the saturated alveoli and the pulmonary capillaries as constants.</p>
+        </content>
+      </text>
+    </region>
+    <region left="108" top="45" width="109" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Hz.f</e>
+          <e type="operand">1.38</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">g</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="432" top="45" width="124" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.CO</e>
+          <e type="operand">0.007</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="62" height="25" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">218</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="54" width="111" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.H2O</e>
+          <e type="operand">47</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="603" top="54" width="105" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">ΔP.a</e>
+          <e type="operand">49</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="90" width="770" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the partial pressure of inspired carbon monoxide during the clearance phase with Equation 18 from the ambient pressure and the fraction of carbon monoxide in the air</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="135" width="105" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.B</e>
+          <e type="operand">700</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="135" width="88" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="operand">4</e>
+          <e type="operand" style="unit">ppm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="135" width="187" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.I.CO.c</e>
+          <e type="operand">x.CO</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="135" width="178" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="6">
+        <input>
+          <e type="operand">P.I.CO.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.002612</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="171" width="780" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the mean pulmonary capillary oxygen pressure during the clearance phase with Equation 19 from the fraction of oxygen in the air.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="207" width="80" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.O2</e>
+          <e type="operand">21</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="135" top="207" width="294" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">P.C.O2.c</e>
+          <e type="operand">x.O2</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">P.I.CO.c</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ΔP.a</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="207" width="178" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">P.C.O2.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">88.12945</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="243" width="764" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the diffusion rate for an employee who is resting during the clearance phase with Equation 20 and the appropriate value from Table 1. </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="279" width="152" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D`.L.c</e>
+          <e type="operand">20</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="279" width="306" height="77" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.L.c</e>
+          <e type="operand">D`.L.c</e>
+          <e type="operand">1</e>
+          <e type="operand">0.0031</e>
+          <e type="operand">x.O2</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">150</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="279" width="181" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">D.L.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">20.8311</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="351" width="762" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the alveolar ventilation for an employee who is resting during the clearance phase with Equation 21 and the appropriate value from Table 1. </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="396" width="107" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V`.A.c</e>
+          <e type="operand">6</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="396" width="270" height="51" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.A.c</e>
+          <e type="operand">V`.A.c</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">760</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">273.15</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">310.15</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="396" width="153" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="6">
+        <input>
+          <e type="operand">V.A.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">L</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">4.540255</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="450" width="316" height="24" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate β for the clearance phase with Equation 2.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="477" width="175" height="57" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">β.c</e>
+          <e type="operand">1</e>
+          <e type="operand">D.L.c</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">V.A.c</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="477" width="183" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="6" trailingZeros="true">
+        <input>
+          <e type="operand">β.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operand" style="unit">sec</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">11.509780</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="540" width="694" height="24" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate Q, R, and S for the clearance phase with Equations 11, 12, and 13 from amount of hemoglobin in the blood.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="567" width="131" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Hb</e>
+          <e type="operand">15.8</e>
+          <e type="operand" style="unit">gram</e>
+          <e type="operand">100</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="567" width="269" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Q.c</e>
+          <e type="operand">β.c</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operand">P.I.CO.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">P.C.O2.c</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="567" width="143" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="5" trailingZeros="true">
+        <input>
+          <e type="operand">Q.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">88.99160</e>
+        </result>
+      </math>
+    </region>
+    <region left="198" top="603" width="157" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">R.c</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P.C.O2.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="603" width="143" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">R.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">19.21575</e>
+        </result>
+      </math>
+    </region>
+    <region left="198" top="639" width="254" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">S.c</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operand">β.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P.I.CO.c</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="639" width="143" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="6" trailingZeros="true">
+        <input>
+          <e type="operand">S.c</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0.187983</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="675" width="719" height="24" color="#000000" fontSize="10">
+      <text lang="eng">
+        <content>
+          <p>Calculate the concentration of COHb in the blood from the measured fraction of COHb in the blood when it was measured.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="702" width="105" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">%COHb.C</e>
+          <e type="operand">15</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="702" width="178" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">COHb.C</e>
+          <e type="operand">%COHb.C</e>
+          <e type="operand">Hz.f</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="702" width="131" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="6">
+        <input>
+          <e type="operand">COHb.C</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.032706</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="738" width="760" height="40" color="#000000" fontSize="10">
+      <text lang="eng">
+        <content>
+          <p>Use a nonlinear equation solver with Equation 10 to find the COHb concentration at the begining of the clearance phase from the duration of the clearance phase and the volume of blood in the body.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="783" width="105" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δt.c</e>
+          <e type="operand">120</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="198" top="783" width="65" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.b</e>
+          <e type="operand">5</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="819" width="670" height="59" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">COHb.B</e>
+          <e type="operand">COHb.B</e>
+          <e type="operand">Q.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">S.c</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">COHb.C</e>
+          <e type="operand">Q.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">S.c</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">ln</e>
+          <e type="operand">Q.c</e>
+          <e type="operand">R.c</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">Δt.c</e>
+          <e type="operand">Q.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.b</e>
+          <e type="operand">β.c</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">COHb.B</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">COHb.C</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">COHb.B</e>
+          <e type="operand">COHb.C</e>
+          <e type="operand">3</e>
+          <e type="operand">COHb.C</e>
+          <e type="operator" args="2">*</e>
+          <e type="function" args="4">solve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="882" width="147" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="8" trailingZeros="true">
+        <input>
+          <e type="operand">COHb.B</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.04270695</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="891" width="483" height="24" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the percent COHb in the blood at the beginning of the clearance phase.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="918" width="133" height="55" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">%COHb.B</e>
+          <e type="operand">COHb.B</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="918" width="151" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">%COHb.B</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">%</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">19.58675</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="999" width="785" height="40" color="#000000" fontSize="10">
+      <text lang="eng">
+        <content>
+          <p>Calculate the concentration of carboxyhemoglobin at the beginning of the exposure phase using the fraction of carboxyhemoglobin in the blood of a non-smoker listed in Table 2.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1044" width="121" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">%COHb.A</e>
+          <e type="operand">0.75</e>
+          <e type="operand" style="unit">%</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="1044" width="178" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">COHb.A</e>
+          <e type="operand">%COHb.A</e>
+          <e type="operand">Hz.f</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1044" width="131" height="31" color="#000000" fontSize="10">
+      <math decimalPlaces="6">
+        <input>
+          <e type="operand">COHb.A</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.001635</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1071" width="769" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the diffusion rate for an employee who is performing moderate work during the exposure phase with Equation 20 and the appropriate value from Table 1. </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1107" width="152" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D`.L.e</e>
+          <e type="operand">30</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="1107" width="306" height="77" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">D.L.e</e>
+          <e type="operand">D`.L.e</e>
+          <e type="operand">1</e>
+          <e type="operand">0.0031</e>
+          <e type="operand">x.O2</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">150</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1107" width="189" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">D.L.e</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mL</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">31.24665</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1179" width="780" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate the alveolar ventilation for an employee who is performing moderate work during the exposure phase with Equation 21 and the appropriate value from Table 1. </p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1215" width="115" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V`.A.e</e>
+          <e type="operand">18</e>
+          <e type="operand" style="unit">L</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="216" top="1215" width="270" height="51" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">V.A.e</e>
+          <e type="operand">V`.A.e</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">760</e>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">273.15</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">310.15</e>
+          <e type="operand" style="unit">K</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1215" width="153" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="5">
+        <input>
+          <e type="operand">V.A.e</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">L</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">13.62077</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1278" width="313" height="24" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Calculate β for the exposure phase with Equation 2.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1305" width="175" height="57" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">β.e</e>
+          <e type="operand">1</e>
+          <e type="operand">D.L.e</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">V.A.e</e>
+          <e type="operator" args="2">/</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1305" width="175" height="43" color="#000000" fontSize="10">
+      <math decimalPlaces="6">
+        <input>
+          <e type="operand">β.e</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">mmHg</e>
+          <e type="operand" style="unit">sec</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">mL</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">4.796696</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1368" width="779" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Since the partial pressure of inspired carbon monoxide and the mean pulmonary capillary oxygen pressure are both dependent upon the concentration of CO and this is what we seek as a solution these parameters must be defined as function of CO concentration.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1413" width="227" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.I.CO.e</e>
+          <e type="operand">x.CO</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="270" top="1413" width="373" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.C.O2.e</e>
+          <e type="operand">x.O2</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.I.CO.e</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">ΔP.a</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1449" width="538" height="24" color="#000000" fontSize="10">
+      <text lang="eng">
+        <content>
+          <p>Similarly Q, R, and S for the exposure phase are dependent upon the concentration of CO.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1476" width="387" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">Q.e</e>
+          <e type="operand">β.e</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.I.CO.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.C.O2.e</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1512" width="236" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">R.e</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.C.O2.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1548" width="333" height="35" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">S.e</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operand">β.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">P.I.CO.e</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1584" width="773" height="40" color="#000000" fontSize="10" isBreakable="false">
+      <text lang="eng">
+        <content>
+          <p>Use a nonlinear equation solver with Equation 14 to find the concentration of carbon monoxide during the exposure phase. But first we bound the solve function with Equation 22.</p>
+        </content>
+      </text>
+    </region>
+    <region left="0" top="1620" width="105" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Δt.e</e>
+          <e type="operand">240</e>
+          <e type="operand" style="unit">min</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1647" width="507" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.L</e>
+          <e type="operand">β.e</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">x.O2</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">ΔP.a</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">COHb.B</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.CO</e>
+          <e type="operand">β.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Hz.f</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">Hz.f</e>
+          <e type="operand">Hb</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">COHb.B</e>
+          <e type="operand">M</e>
+          <e type="operand">x.O2</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">P.B</e>
+          <e type="operand">P.H2O</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1683" width="156" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.L</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ppm</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">149.9035</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1710" width="137" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.H</e>
+          <e type="operand">1.3</e>
+          <e type="operand">x.CO.L</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="585" top="1710" width="156" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.H</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ppm</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">194.8745</e>
+        </result>
+      </math>
+    </region>
+    <region left="0" top="1737" width="775" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.e</e>
+          <e type="operand">COHb.A</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">Q.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">S.e</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">COHb.B</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">Q.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">S.e</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">/</e>
+          <e type="function" args="1">ln</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">Q.e</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">R.e</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">Δt.e</e>
+          <e type="operand">x.CO</e>
+          <e type="function" args="1">Q.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">V.b</e>
+          <e type="operand">β.e</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">M</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">COHb.A</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">COHb.B</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">x.CO</e>
+          <e type="operand">x.CO.L</e>
+          <e type="operand">x.CO.H</e>
+          <e type="function" args="4">solve</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="1800" width="156" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">x.CO.e</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ppm</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">193.7957</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
